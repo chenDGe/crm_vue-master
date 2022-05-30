@@ -1,0 +1,171 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+.m98Auto {
+  width: 98%;
+  margin: 0 auto;
+}
+.pro_top_button {
+  min-height: 80px;
+  line-height: 80px;
+}
+.pro_top_pagination {
+  padding: 20px 0;
+}
+.border {
+  border: 1px solid #EBEEF5;
+}
+.paddingTB20 {
+  padding: 20px 0;
+}
+.maTop20{
+  margin-top: 20px;
+}
+.maBot20{
+  margin-bottom: 20px;
+}
+.maBot10{
+  margin-bottom: 10px;
+}
+.paddingTB15 {
+  padding: 15px;
+}
+.paddingLeft15 {
+  padding-left: 15px;
+}
+.font12 {
+  font-size: 12px;
+}
+.fontWeight600 {
+  font-weight: 600;
+}
+
+.flRight{
+  float: right;
+}
+.curPointer {
+  cursor: pointer;
+}
+
+.poEvents {
+  pointer-events: none;
+}
+
+.el-dialog .el-input, .el-dialog .el-select {
+  width: 300px;
+}
+
+.colorRed {
+  color: red;
+}
+.height50 {
+  height: 50px;
+}
+.colorDuf {
+  color: #409EFF;
+}
+.colorWin {
+  color: #E6A23C;
+}
+.colorSuc {
+  color: #67C23A;
+}
+
+.el-table tr th {
+  background: #EBEEF5 !important;
+}
+/** 修改个别样式 **/
+.resource_overview {
+  table {
+    border: 1px solid #EBEEF5;
+  }
+  .el-table td:nth-child(odd) {
+    background: #409eff !important;
+    color: white;
+    font-weight: bold;
+  }
+}
+.info_cost {
+  .el-table td:nth-child(1n+0) {
+    font-weight: bold;
+  }
+}
+
+a {
+  color: #29d;
+}
+
+.item_margin_15 {
+  margin-right: 15px;
+}
+.minWith400 {
+  min-width: 400px;
+}
+
+.import_tip {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
